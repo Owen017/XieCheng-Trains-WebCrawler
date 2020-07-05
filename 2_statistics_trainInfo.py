@@ -2,7 +2,8 @@
 """
 Created on Sat Jul  4 09:56:53 2020
 @author: 10003
-zjy车站互通性结果统计, 需要30min+
+长三角城市铁路站点通达度分析————数据准备
+(3)统计各站点列车互通班次数据, 以字典格式存储于dictNum.npy, 程序运行时间30min+
 """
 import pymysql
 
@@ -43,7 +44,7 @@ for i in stationList:
 # 关闭数据库连接
 db.close()
 
-# 计算结果dictNum存储
+# 计算结果dictNum存储在.npy文件中
 import numpy as np
 np.save("dictNum.npy",dictNum)
 

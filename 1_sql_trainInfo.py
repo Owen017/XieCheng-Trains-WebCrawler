@@ -2,7 +2,8 @@
 """
 Created on Sat Jul  4 10:01:14 2020
 @author: 10003
-zjy车站互通性结果导入数据库
+长三角城市铁路站点通达度分析————数据准备
+(2)将allDATA.csv存入MySQL并去重
 """
 
 import pymysql
